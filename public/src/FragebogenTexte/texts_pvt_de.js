@@ -5,7 +5,7 @@ const lapse_time = 10000; // 10 seconds in milliseconds
 const premature_time = 100; // 0.1 seconds in milliseconds
 
 const pvt_start_p1 = `<div class="instructions"> 
-    Die nächste Aufgabe testet Ihre Aufmerksamkeit.  
+    Die erste Aufgabe testet Ihre Aufmerksamkeit.  
     Eine <b>Stoppuhr</b> in der Mitte des Bildschirms wird irgendwann beginnen, rasch hochzuzählen. 
     Wenn das passiert, ist es Ihre Aufgabe, so schnell wie möglich die <b>Leertaste zu drücken. 
     Bitte verwenden Sie Ihre dominante Hand</b> (die Hand, mit der Sie normalerweise schreiben). 

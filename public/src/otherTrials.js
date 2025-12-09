@@ -253,8 +253,7 @@ const Debriefing = {
   stimulus: function () {
     return `
             <div class="instructions">
-                <p>Die erste Teil der Studie ist nun abgeschlossen.</p>
-                <p>Wir werden Sie morgen früh bitten, die Wörter, denen ein EEE folgte, aus dem Gedächtnis abzurufen.</p>
+                <p>Dieser Teil der Studie ist nun abgeschlossen.</p>
                 <p> Wenden Sie sich nun bitte an die Versuchsleitung </p> 
                 <p> Information an die Versuchsleitung: Daten speichern mit Pfeil-nach-unten Taste</p>
             </div>

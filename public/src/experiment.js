@@ -57,67 +57,8 @@ const buildFromVPNTrial = {
         return Number.isFinite(n) ? n : fallback;
       };
 
-      const selected_tmrsound = toNumber(resp["Erinnert + Reaktiviert Ton"], 1);
-      const selected_tmfsound = toNumber(
-        resp["Vergessen + Reaktiviert Ton"],
-        2
-      );
-      const selected_rsound = toNumber(
-        resp["Erinnert + Nicht-Reaktiviert Ton"],
-        3
-      );
-      const selected_fsound = toNumber(
-        resp["Vergessen + Nicht-Reaktiviert Ton"],
-        4
-      );
-      const selected_sound5 = toNumber(resp["Unasoziierter Ton"], 5);
-
-      const selected_tmr_list = toNumber(
-        resp["Erinnert + Reaktiviert Liste"],
-        1
-      );
-      const selected_tmf_list = toNumber(
-        resp["Vergessen + Reaktiviert Liste"],
-        2
-      );
-      const selected_r_list = toNumber(
-        resp["Erinnert + Nicht-Reaktiviert Liste"],
-        3
-      );
-      const selected_f_list = toNumber(
-        resp["Vergessen + Nicht-Reaktiviert Liste"],
-        4
-      );
-
-      const mainWordListMap = {
-        1: wordList1,
-        2: wordList2,
-        3: wordList3,
-        4: wordList4,
-      };
-      const resolveList = (selection, fallback) =>
-        mainWordListMap[selection] || mainWordListMap[fallback] || [];
-
-      jsPsych.data.addProperties({
-        selected_tmrsound,
-        selected_tmfsound,
-        selected_rsound,
-        selected_fsound,
-        selected_sound5,
-        selected_tmr_list,
-        selected_tmf_list,
-        selected_r_list,
-        selected_f_list,
-      });
-
-      const mainLists = {
-        tmr: resolveList(selected_tmr_list, 1),
-        tmf: resolveList(selected_tmf_list, 2),
-        r: resolveList(selected_r_list, 3),
-        f: resolveList(selected_f_list, 4),
-      };
-
       const rest = [
+        instructions,
         pvt_start_screen,
         pvt_practice_outer,
         pvt_main_instructions,
