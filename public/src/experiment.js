@@ -99,6 +99,7 @@ function createTimeline() {
       ...CBC_VPNNummer,
       data: { ...(CBC_VPNNummer.data || {}), form_id: "vpn" },
     },
+    demographics_block,
     buildFromVPNTrial
   );
 }

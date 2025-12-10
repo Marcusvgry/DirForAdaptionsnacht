@@ -14,7 +14,6 @@
     );
     data.isExcludedHard = details.isExcludedHard;
     data.exclusionItems = details.items;
-    // HIER die neue Funktion einsetzen:
     data.markedFormHtml = prefillAndMark(
       text_demographics,
       resp,
